@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import banner from './banner.jpg';
 
@@ -8,7 +8,7 @@ export const Home = () => {
       <Banner>
         <img src={banner} alt="banner" />
       </Banner>
-      <Content>
+      <Offers>
         <h1 className="main-title">ТВОИТЕ СЕРИАЛИ ОНЛАЙН</h1>
         <p className="main-desc">Без обвързване, откажи се по всяко време</p>
         <button className="reg-now">РЕГИСТРИРАЙ СЕ СЕГА</button>
@@ -38,6 +38,23 @@ export const Home = () => {
             </p>
           </article>
         </section>
+      </Offers>
+      <Content>
+        <article className="popular-tv-shows">
+          <h3 className="title">Популярни сериали</h3>
+        </article>
+        <article className="popular-movies">
+          <h3 className="title">Популярни филми</h3>
+        </article>
+        <article className="lotr">
+          <h3 className="title">
+            Гандалф, Фродо, Ам-гъл, Арагорн, Арвен, Билбо и много други от
+            любимите ти герои те очакват за приключение в HBO GO
+          </h3>
+        </article>
+        <article className="harry-potter">
+          <h3 className="title">СТАНИ ЧАСТ ОТ МАГИЧЕСКИЯ СВЯТ</h3>
+        </article>
       </Content>
     </Wrapper>
   );
@@ -46,9 +63,8 @@ export const Home = () => {
 const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
-  background: black;
+
   height: 100vh;
-  align-items: center;
 `;
 
 const Banner = styled.header`
@@ -58,7 +74,7 @@ const Banner = styled.header`
   }
 `;
 
-const Content = styled.section`
+const Offers = styled.section`
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -116,5 +132,15 @@ const Content = styled.section`
       border-left: 1px solid gray;
       padding: 20px 10px;
     }
+  }
+`;
+
+const Content = styled.section`
+  display: flex;
+  flex-direction: column;
+  color: white;
+  .title {
+    font-weight: lighter;
+    font-size: 25px;
   }
 `;
