@@ -1,12 +1,15 @@
 // import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import banner from './banner.jpg';
+// import banner from './banner.jpg';
 
 export const Home = () => {
   return (
     <Wrapper>
       <Banner>
-        <img src={banner} alt="banner" />
+        <img
+          src="https://hboeu.azureedge.net/uiimages/5C800F3D-8985-4D8D-A5E6-A0525A981D19/original.jpg"
+          alt="banner"
+        />
       </Banner>
       <Offers>
         <h1 className="main-title">ТВОИТЕ СЕРИАЛИ ОНЛАЙН</h1>

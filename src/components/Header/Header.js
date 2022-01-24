@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import styled from 'styled-components';
 import logo from './hbogologo.svg';
 
@@ -11,120 +11,120 @@ export const Header = () => {
             HBO GO
           </Link>
         </Logo>
-        <Link className="nav-btns" to="/tv-shows">
+        <NavLink className="nav-btns" to="/tv-shows">
           СЕРИАЛИ
           <section className="sub-menu">
             <article className="tv-shows-type">
-              <Link className="tv-shows-link" to="tv-shows/recent">
+              <Link className="content-link" to="tv-shows/recent">
                 Последно добавени
               </Link>
-              <Link className="tv-shows-link" to="tv-shows/popular">
+              <Link className="content-link" to="tv-shows/popular">
                 Популярни сериали
               </Link>
-              <Link className="tv-shows-link" to="tv-shows/imdb-high-rating">
+              <Link className="content-link" to="tv-shows/imdb-high-rating">
                 IMDb 7+
               </Link>
-              <Link className="tv-shows-link" to="tv-shows/original-hbo">
+              <Link className="content-link" to="tv-shows/original-hbo">
                 Оригинални HBO продукции
               </Link>
-              <Link className="tv-shows-link" to="tv-shows/europe">
+              <Link className="content-link" to="tv-shows/europe">
                 Продукции на HBO Европа
               </Link>
-              <Link className="tv-shows-link" to="tv-shows/coming-soon">
+              <Link className="content-link" to="tv-shows/coming-soon">
                 Очаквайте скоро
               </Link>
             </article>
             <article className="tv-shows-genres">
-              <Link className="tv-shows-link" to="tv-shows/drama">
+              <Link className="content-link" to="tv-shows/drama">
                 Драма
               </Link>
-              <Link className="tv-shows-link" to="tv-shows/comedy">
+              <Link className="content-link" to="tv-shows/comedy">
                 Комедия
               </Link>
-              <Link className="tv-shows-link" to="tv-shows/criminal-thriller">
+              <Link className="content-link" to="tv-shows/criminal-thriller">
                 Криминален, трилър
               </Link>
-              <Link className="tv-shows-link" to="tv-shows/sci-fi-fantasy">
+              <Link className="content-link" to="tv-shows/sci-fi-fantasy">
                 Научна фантастика, фентъзи
               </Link>
-              <Link className="tv-shows-link" to="tv-shows/documentary">
+              <Link className="content-link" to="tv-shows/documentary">
                 Документален
               </Link>
-              <Link className="tv-shows-link" to="tv-shows/other">
+              <Link className="content-link" to="tv-shows/other">
                 Други
               </Link>
             </article>
           </section>
-        </Link>
-        <Link className="nav-btns" to="/movies">
+        </NavLink>
+        <NavLink className="nav-btns" to="/movies">
           ФИЛМИ
           <section className="sub-menu">
             <article className="movies-type">
-              <Link className="tv-shows-link" to="tv-shows/recent">
+              <Link className="content-link" to="tv-shows/recent">
                 Последно добавени
               </Link>
-              <Link className="tv-shows-link" to="tv-shows/popular">
+              <Link className="content-link" to="tv-shows/popular">
                 Популярни сериали
               </Link>
-              <Link className="tv-shows-link" to="tv-shows/imdb-high-rating">
+              <Link className="content-link" to="tv-shows/imdb-high-rating">
                 IMDb 7+
               </Link>
-              <Link className="tv-shows-link" to="tv-shows/original-hbo">
+              <Link className="content-link" to="tv-shows/original-hbo">
                 Оригинални HBO продукции
               </Link>
-              <Link className="tv-shows-link" to="tv-shows/europe">
+              <Link className="content-link" to="tv-shows/europe">
                 Предложения от България
               </Link>
-              <Link className="tv-shows-link" to="tv-shows/coming-soon">
+              <Link className="content-link" to="tv-shows/coming-soon">
                 Очаквайте скоро
               </Link>
             </article>
             <article className="movies-genres">
-              <Link className="tv-shows-link" to="movies/action-adventure">
+              <Link className="content-link" to="movies/action-adventure">
                 Екшън, приключенски
               </Link>
-              <Link className="tv-shows-link" to="movies/sci-fi-fantasy">
+              <Link className="content-link" to="movies/sci-fi-fantasy">
                 Научна фантастика, фентъзи
               </Link>
-              <Link className="tv-shows-link" to="movies/drama">
+              <Link className="content-link" to="movies/drama">
                 Драма
               </Link>
-              <Link className="tv-shows-link" to="movies/family">
+              <Link className="content-link" to="movies/family">
                 Семееен
               </Link>
-              <Link className="tv-shows-link" to="movies/comedy">
+              <Link className="content-link" to="movies/comedy">
                 Комедия
               </Link>
-              <Link className="tv-shows-link" to="movies/documentary">
+              <Link className="content-link" to="movies/documentary">
                 Документален
               </Link>
-              <Link className="tv-shows-link" to="movies/criminal">
+              <Link className="content-link" to="movies/criminal">
                 Криминален
               </Link>
-              <Link className="tv-shows-link" to="movies/musical">
+              <Link className="content-link" to="movies/musical">
                 Музика
               </Link>
-              <Link className="tv-shows-link" to="movies/romance">
+              <Link className="content-link" to="movies/romance">
                 Романтичен
               </Link>
-              <Link className="tv-shows-link" to="movies/other">
+              <Link className="content-link" to="movies/other">
                 Други
               </Link>
-              <Link className="tv-shows-link" to="movies/thriller-horror">
+              <Link className="content-link" to="movies/thriller-horror">
                 Трилър, ужаси
               </Link>
             </article>
           </section>
-        </Link>
-        <Link className="nav-btns" to="/kids">
+        </NavLink>
+        <NavLink className="nav-btns round" to="/kids">
           KIDS
-        </Link>
-        <Link className="nav-btns" to="/tv-schedule">
+        </NavLink>
+        <NavLink className="nav-btns round" to="/tv-schedule">
           ТВ ПРОГРАМА
-        </Link>
-        <Link className="nav-btns" to="/search">
+        </NavLink>
+        <NavLink className="nav-btns round" to="/search">
           <i class="fas fa-search"></i>
-        </Link>
+        </NavLink>
       </Nav>
       <NavAuth>
         <Link className="nav-auth-reg" to="/register">
@@ -159,6 +159,8 @@ const Nav = styled.nav`
     text-decoration: none;
     color: white;
     padding: 17px 20px;
+    z-index: 7;
+
     .sub-menu {
       display: none;
       position: absolute;
@@ -173,7 +175,7 @@ const Nav = styled.nav`
 
       z-index: 10;
 
-      .tv-shows-link {
+      .content-link {
         color: white;
         font-size: 16px;
         text-decoration: none;
@@ -207,10 +209,39 @@ const Nav = styled.nav`
       }
     }
 
-    &:hover {
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
       background: #0091ea;
+      height: 0%;
+      opacity: 60%;
+      z-index: -1;
+      inset: 0;
+      transition: cubic-bezier(0.86, 0, 0.07, 1) 250ms;
+    }
 
+    &[aria-current] {
+      &::after {
+        content: '';
+        width: 90%;
+        height: 2px;
+        margin: auto;
+        background: #0091ea;
+        position: absolute;
+        inset: 75% 0 0 0;
+      }
+    }
+    &:hover {
+      &::before {
+        transition: cubic-bezier(0.86, 0, 0.07, 1) 250ms;
+        background: #0091ea;
+        opacity: 100%;
+        height: 100%;
+      }
       .sub-menu {
+        animation-delay: 500ms;
+        animation: 700ms submenu ease-out;
         display: flex;
       }
     }
