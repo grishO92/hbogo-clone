@@ -70,7 +70,7 @@ const Wrapper = styled.section`
 const Banner = styled.header`
   margin-top: 53px;
   img {
-    width: 100vw;
+    width: 100%;
   }
 `;
 
