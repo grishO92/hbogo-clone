@@ -167,11 +167,16 @@ const Nav = styled.nav`
       top: 100%;
       left: 0;
       width: max-content;
-      background: rgba(0, 0, 0, 0.92);
-      border: 1px solid rgba(255, 255, 255, 0.4);
+      background: linear-gradient(
+        311deg,
+        rgba(31, 31, 31, 1) 0%,
+        rgba(14, 14, 14, 1) 40%,
+        rgba(28, 28, 28, 1) 100%
+      );
+      border: 1px solid rgba(255, 255, 255, 0.16);
       border-top: 2px solid #0091ea;
       border-radius: 0 0 5px 5px;
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
 
       z-index: 10;
 
@@ -190,7 +195,7 @@ const Nav = styled.nav`
       }
       .tv-shows-type,
       .movies-type {
-        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        border-right: 1px solid rgba(255, 255, 255, 0.16);
       }
 
       .tv-shows-type,
@@ -239,9 +244,11 @@ const Nav = styled.nav`
         opacity: 100%;
         height: 100%;
       }
+      &.round::before {
+        border-radius: 0 0 5px 5px;
+      }
       .sub-menu {
-        animation-delay: 500ms;
-        animation: 700ms submenu ease-out;
+        animation: 500ms submenu ease-in-out;
         display: flex;
       }
     }
